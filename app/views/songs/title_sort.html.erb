@@ -1,0 +1,44 @@
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Artist</th>
+      <th>Danceability</th>
+      <th>Energy</th>
+      <th>Key</th>
+      <th>Loudness</th>
+      <th>Mode</th>
+      <th>Speechness</th>
+      <th>Acousticness</th>
+      <th>Instrumentalness</th>
+      <th>Liveness</th>
+      <th>Valence</th>
+      <th>Tempo</th>
+      <th>Duration(ms)</th>
+      <th>Time Signatue</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @songs.each do |song| %>
+      <tr>
+        <td><%= song.title %></td>
+        <td><%= song.artist %></td>
+        <td><%= song.danceability %></td>
+        <td><%= song.energy %></td>
+        <td><%= song.key %></td>
+        <td><%= song.loudness %></td>
+        <td><%= song.mode %></td>
+        <td><%= song.speechiness %></td>
+        <td><%= song.acousticness %></td>
+        <td><%= song.instrumentalness %></td>
+        <td><%= song.liveness %></td>
+        <td><%= song.valence %></td>
+        <td><%= song.tempo %></td>
+        <td><%= song.duration_ms %></td>
+        <td><%= song.time_signature %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
