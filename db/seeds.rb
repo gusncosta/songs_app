@@ -6,10 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+#open json file with wanted data and save it to the array foo
 require 'json'
 contents = File.read('track.json')
 foo = Kernel.eval(contents)
 
+#create 100 Song objects (the numbber of json elements in track.json) from teh data stored in foo 
 i = 0
 
 while i < 100 do
