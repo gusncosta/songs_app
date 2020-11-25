@@ -1,14 +1,13 @@
-
 <%= form_tag('\index', :method => "get", class: 'navbar-form navbar-left') do %>  
   <div class="input-group">  
-    <%= search_field_tag :search, params[:search], placeholder: "Insert a Title", class: "form-control" %>  
+    <%= search_field_tag :search, params[:search], placeholder: "Insert song title", class: "form-control" %>  
   </div>  
 <% end %>
 
-
+<%= stylesheet_link_tag 'songs' %>
 <table>
   <thead>
-    <tr>
+    <tr> <!-- sortable method in songs_helper -->
       <th><%=sortable "title"%></th>
       <th><%=sortable "artist" %></th>
       <th><%=sortable "danceability" %></th>
