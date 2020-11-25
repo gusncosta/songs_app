@@ -10,7 +10,7 @@ class CreateSongs < ActiveRecord::Migration[6.0]
       t.integer :mode
       t.float :speechiness
       t.float :acousticness
-      t.integer :instrumentalness
+      t.float :instrumentalness
       t.float :liveness
       t.float :valence
       t.float :tempo

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_24_200352) do
+ActiveRecord::Schema.define(version: 2020_11_25_140009) do
 
   create_table "songs", force: :cascade do |t|
     t.string "title"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2020_11_24_200352) do
     t.integer "mode"
     t.float "speechiness"
     t.float "acousticness"
-    t.integer "instrumentalness"
+    t.float "instrumentalness"
     t.float "liveness"
     t.float "valence"
     t.float "tempo"
