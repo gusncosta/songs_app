@@ -1,0 +1,32 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+table{
+    
+   overflow-x:scroll;
+   height:90%;
+   width:100%;
+   display:block;
+   text-align: left;
+   word-wrap: break-word;
+   table-layout: fixed;
+   display: inline-block;
+    
+   .asc {
+        color: red;
+    }
+    
+   .desc {
+    color: black;
+    }
+
+}
+
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
